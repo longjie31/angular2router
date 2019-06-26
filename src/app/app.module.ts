@@ -7,6 +7,7 @@ import {CrisisListComponent} from './crisis-list/crisis-list.component';
 import {PageNotFoundComponent} from './page-not-found/page-not-found.component';
 import {HeroesModule} from './heroes/heroes.module';
 import {FormsModule} from '@angular/forms';
+import {BrowserAnimationsModule} from '@angular/platform-browser/animations';
 
 @NgModule({
     declarations: [
@@ -18,6 +19,7 @@ import {FormsModule} from '@angular/forms';
         BrowserModule,
         HeroesModule,
         FormsModule,
+        BrowserAnimationsModule,
         AppRoutingModule,
     ],
     providers: [],

@@ -1,6 +1,8 @@
 <h1>Angular路由</h1>
 <nav>
-  <a routerLink="/crisis-center" routerLinkActive="active">危机中心</a>
-  <a routerLink="/heroes" routerLinkActive="active">英雄们</a>
+    <a routerLink="/crisis-center" routerLinkActive="active">危机中心</a>
+    <a routerLink="/heroes" routerLinkActive="active">英雄们</a>
 </nav>
-<router-outlet></router-outlet>
+<div [@routeAnimation]="getAnimationData(routerOutlet)">
+    <router-outlet #routerOutlet="outlet"></router-outlet>
+</div>
