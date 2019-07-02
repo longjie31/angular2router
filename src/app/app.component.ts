@@ -9,7 +9,7 @@ import {RouterOutlet} from '@angular/router';
     animations: [slideInAnimation]
 })
 export class AppComponent {
-    title = 'angular-router-sample';
+    title = 'angular路由简单例子';
 
     getAnimationData(outlet: RouterOutlet) {
         return outlet && outlet.activatedRouteData && outlet.activatedRouteData['animation'];
