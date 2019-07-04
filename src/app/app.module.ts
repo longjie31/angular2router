@@ -8,12 +8,14 @@ import {PageNotFoundComponent} from './page-not-found/page-not-found.component';
 import {HeroesModule} from './heroes/heroes.module';
 import {FormsModule} from '@angular/forms';
 import {BrowserAnimationsModule} from '@angular/platform-browser/animations';
+import { LoginComponent } from './auth/login/login.component';
 
 @NgModule({
     declarations: [
         AppComponent,
         CrisisListComponent,
-        PageNotFoundComponent
+        PageNotFoundComponent,
+        LoginComponent
     ],
     imports: [
         BrowserModule,

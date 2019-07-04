@@ -3,16 +3,19 @@ import {Routes, RouterModule} from '@angular/router';
 import {CrisisListComponent} from './crisis-list/crisis-list.component';
 
 import {PageNotFoundComponent} from './page-not-found/page-not-found.component';
+import {AuthGuard} from './auth/auth.guard';
 
 const routes: Routes = [
     {
         path: 'crisis-center',
-        component: CrisisListComponent
+        component: CrisisListComponent,
+        canActivate: [AuthGuard]
     },
     {
         path: '',
         redirectTo: '/heroes',
-        pathMatch: 'full'
+        pathMatch: 'full',
+        canActivate: [AuthGuard]
     },
     {
         path: '**',
